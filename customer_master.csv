@@ -1,0 +1,6 @@
+CustomerID,CustomerName,Email,Age,Country
+C001,Raj Kumar,raj@gmail.com,35,India
+C002,Priya Shah,priya@gmail.com,29,India
+C003,Amit Kumar,amit@gmail.com,-5,India
+C004,John Smith,john@,42,UAE
+C005,Sara Ali,sara@gmail.com,abc,UAE
