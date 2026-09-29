@@ -1,0 +1,12 @@
+table_name,column_name,rule_type,rule_value,severity
+customer_master,CustomerID,NOT_NULL,,ERROR
+customer_master,CustomerName,NOT_NULL,,ERROR
+customer_master,Email,REGEX,"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$",ERROR
+customer_master,Age,NUMERIC,,ERROR
+customer_master,Age,NON_NEGATIVE,,ERROR
+customer_transaction,TransactionID,NOT_NULL,,ERROR
+customer_transaction,CustomerID,NOT_NULL,,ERROR
+customer_transaction,CustomerID,FK,customer_master.CustomerID,ERROR
+customer_transaction,TransactionDate,DATE,yyyy-MM-dd,ERROR
+customer_transaction,Amount,NUMERIC,,ERROR
+customer_transaction,Amount,NON_NEGATIVE,,ERROR
